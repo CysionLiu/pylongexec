@@ -32,9 +32,31 @@ def compare(a, b, c):
 # 判断是否为闰年
 def judge(y):
     print(y)
-    if y % 400==0:
+    if y % 400 == 0:
         return True
     if (y % 4 == 0) & (y % 100 != 0):
         return True
     else:
         return False
+
+
+# 计算100以内奇数的和
+def cal_odd_sum(is_odd):
+    sum = 0
+    for i in range(1, 101):
+        if ((i % 2 != 0) & is_odd):
+            sum += i
+        elif ((i % 2 == 0) & (is_odd == False)):
+            sum += i
+    return sum
+
+
+# 判断一个数是否为素数
+def judgeSu(x):
+    if type(x) is not int:
+        return False
+    k = int(math.sqrt(x))
+    for i in range(2, k):
+        if (x % i) == 0:
+            return False
+    return True
