@@ -5,7 +5,7 @@ import math
 
 from samples import tools
 from samples.constants import DIV
-
+import temp
 print(DIV)
 
 print('100以内的奇数的和为', tools.cal_odd_sum(True))
@@ -20,7 +20,7 @@ amount_odd = 0
 for x in range(1, 101, 2):
     amount_odd += x
 print('100以内的奇数的和为', amount_odd)
-
+print(temp.SEP)
 print(DIV, '素数校验')
 
 print(tools.judgeSu(13))
