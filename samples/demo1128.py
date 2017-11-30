@@ -1,3 +1,4 @@
+import os
 from fractions import Fraction
 
 import math
@@ -113,3 +114,5 @@ print(d1.values())
 print(d1.items())
 print('d' in d1)
 print('d' in d2)
+
+print(os.listdir('../static/'))
