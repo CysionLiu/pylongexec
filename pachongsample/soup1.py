@@ -4,10 +4,14 @@ import requests
 from bs4 import BeautifulSoup as soup
 
 
-def get_links(url):
+def gethtml(url):
     resp = requests.get(url)
     page = resp.text
-    doc = soup(page)
+    contents = soup(page,"html.parser")
+    return contents
+
+def get_links(url):
+    doc = gethtml(url)
     links = [ele.get('href') for ele in doc.find_all('a')]
     return links
 
@@ -15,8 +19,9 @@ def get_links(url):
 if __name__ == '__main__':
     url = 'http://geek.csdn.net/mobile'
     links = get_links(url)
-    for l in links:
-        reg = re.compile(r'http(s)?')
-        result = reg.search(str(l))
-        if result is not None:
-            print(l)
+    print(gethtml(url))
+    # for l in links:
+    #     reg = re.compile(r'http(s)?')
+    #     result = reg.search(str(l))
+    #     if result is not None:
+    #         print(l)
