@@ -1,0 +1,16 @@
+<resources>
+    <string name="str_pre_miniute">分钟前</string>
+    <string name="str_pre_hour">小时前</string>
+    <string name="str_pre_day">天前</string>
+    <string name="str_pre_month">个月前</string>
+    <string name="str_pre_year">年前</string>
+    <string name="str_after_minute">分钟后</string>
+    <string name="str_after_hour">小时后</string>
+    <string name="str_after_day">天后</string>
+    <string name="str_after_month">个月后</string>
+    <string name="str_after_year">年后</string>
+    <string name="str_today_c">今天</string>
+    <string name="str_loading">加载中...</string>
+    <string name="str_am">上午</string>
+    <string name="str_pm">下午</string>
+</resources>
