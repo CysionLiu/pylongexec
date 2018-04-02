@@ -7,7 +7,7 @@ zh,zh_x,en_x,ja_x = [],[],[],[]
 
 def read_xml(path):
     global zh
-    c = 2;
+    c = 1;
     dom = xml.dom.minidom.parse(path)
     x = dom.getElementsByTagName("string")
     read_excel()
