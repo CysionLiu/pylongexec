@@ -6,7 +6,7 @@ import time
 def fuli(base, n, num):
     if n == 1:
         return base * (1 + 4.0 / 100 / 12) + num;
-    return fuli(base, n - 1, num) * (4.0 / 100 / 12 + 1) + num
+    return int(fuli(base, n - 1, num) * (4.0 / 100 / 12 + 1) + num)
 
 
 def ar(a, b, *c, **d):
@@ -64,9 +64,9 @@ def jie2(n):
 
 g='hello'
 if __name__ == '__main__':
-    s = fuli(200000, 36, 15000)
+    s = fuli(0, 90, 22000)
     print(s)
-    print(36 * 15000 + 200000)
+    print(90 * 22000 + 0)
     print('------')
     ar(1, 5, 6, 7, name='Jack', age=12, address='Beijing')
     total(100000)

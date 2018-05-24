@@ -1,4 +1,4 @@
-import re
+import ret
 
 import requests
 from bs4 import BeautifulSoup as soup

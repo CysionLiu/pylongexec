@@ -49,9 +49,9 @@ def get_article_detail(url):
 
 
 def get_comment(url):
-    import re
+    import ret
     rawurl = 'http://comment5.news.sina.com.cn/page/info?version=1&format=json&channel=sh&newsid=comos-{}&group=undefined&compress=0&ie=utf-8&oe=utf-8&page=1&page_size=3&t_size=3&h_size=3&thread=1'
-    re_ids = re.search(r'doc-i(.*).shtml', url)
+    re_ids = ret.search(r'doc-i(.*).shtml', url)
     newid = re_ids.group(1)
     url = rawurl.format(newid)
     body = get_body(url)
